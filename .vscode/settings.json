@@ -1,0 +1,20 @@
+{
+  // Editor settings
+  "editor.fontSize": 14, // Sets the font size
+  "editor.fontFamily": "Fira Code Retina", // Sets the font family
+  "editor.lineNumbers": "on", // Enables line numbers
+  "editor.formatOnSave": true, // Automatically formats code on save
+  "editor.wordWrap": "on", // Wraps long lines in the editor
+
+  // UI customization
+  "workbench.colorTheme": "Catppuccin Mocha", // Sets the color theme
+  "workbench.sideBar.location": "left", // Positions the sidebar on the left
+  "workbench.iconTheme": "catppuccin-mocha",
+
+  
+  "[javascript]": {
+    "editor.formatOnPaste": true,
+    "editor.tabSize": 4
+  },
+
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <!-- Bootstrap 4 CSS via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+          integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<nav>
+    <ul>
+        <li>A portfolio example</li>
+        <li>by</li>
+        <li>Reikan Kresna</li>
+        <li ><button id="toggleOpacityBtn">Toggle-bg</button></li>
+        <li><a href="#contact" ta rget="_self">Contact</a> </li>
+        <li><a href="https://github.com/rknkrsnmln" target="_blank">GitHub</a></li>
+    </ul>
+</nav>
+<header>
+    <div class="container">
+        <div class="row">
+            <!--left column-->
+            <div class="col-sm">
+                <h1>Hi, I'm<br> Jane Doe</h1>
+                <ul>
+                    <li>Criminal Behavior Specialist</li>
+                    <li>Criminal Investigation Special Response Team</li>
+                    <li>Designed and Made By Reikan Kresna</li>
+                </ul>
+                <a href="https://github.com/rknkrsnmln" class="button" target="_blank">add me on GitHub</a>
+            </div>
+            <!--right column-->
+            <div class="col-sm">
+                <figure>
+                    <img src="img/Jane-Doe.webp" alt="Jane">
+                    <figcaption>Photo of Jane Doe</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</header>
+<!--    skill-->
+<section>
+    <ul class="skills-list">
+        <li>Basic Attack: Dancing Blades</li>
+        <li>Basic Attack: Salchow Jump</li>
+        <li>Dodge: Phantom**</li>
+        <li>Ultimate: Final Curtain**</li>
+    </ul>
+</section>
+<!--    project-->
+<!--    project 1-->
+<section class="projects bg-gradient-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <figure>
+                    <img src="img/99f3976ef99aed1961dccb219411e7c5_5018935923237230642.gif" alt="Reikan">
+                    <figcaption>Dancing Blade</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm">
+                <h2>Basic Attack: Dancing Blades</h2>
+                <p>Tekan untuk melancarkan Skill ini.
+                    Melancarkan hingga enam serangan ke depan dan mengakibatkan Physical DMG.</p>
+                <a href="#" class="button">read more</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--    project 2-->
+<section class="projects">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h2>Basic Attack: Salchow Jump</h2>
+                <p>Saat kesempatan penggunaan masih tersisa, tahan untuk melancarkan Skill ini.
+                    Melancarkan serangan beruntun yang cepat ke depan sebelum melancarkan serangan terakhirnya dan
+                    mengakibatkan Physical DMG.</p>
+                <a href="" class="button">read more</a>
+            </div>
+            <div class="col-sm">
+                <figure>
+                    <img src="img/cde98ead7c3669d4ebbc75d85dbaad81_7977463673386639478.gif" alt="Reikan">
+                    <figcaption>Salchow Jump</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+<!--    project 3-->
+<section class="projects bg-gradient-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <figure>
+                    <img src="img/92e78c498484a9103772ce0e8861e0ee_2798098701346053287.gif" alt="Reikan">
+                    <figcaption>The Honest Company</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm">
+                <h2>Dodge: Phantom**</h2>
+                <p>Tekan  untuk melakukan Dodge.
+                    Melakukan Dodge dengan cepat.
+                    Karakter akan menjadi kebal selama melancarkan Skill ini.</p>
+                <a href="" class="button">read more</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Form Section -->
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="button">Send Message</button>
+        </form>
+        <!-- Make sure the response message div is not hidden by default -->
+        <p id="responseMessage"></p>
+    </div>
+</section>
+<footer>
+    <h2> Want another website like this ?<br>
+        contact me <br>
+        reikan.kresna@gmail.com</h2>
+</footer>
+
+
+<!-- Bootstrap 4 JS and dependencies -->
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+</html>
